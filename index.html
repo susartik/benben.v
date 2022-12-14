@@ -1,0 +1,143 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BEN VERSTEEGT</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<script src="https://kit.fontawesome.com/1ab3891083.js" crossorigin="anonymous"></script>
+<style>
+        @keyframes jump {
+  0%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
+  40%  {transform: translate3d(0,30%,0) scale3d(.7,1.5,1);}
+  100% {transform: translate3d(0,100%,0) scale3d(1.5,.7,1);}
+}
+
+ @keyframes colorRotate {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+}
+
+.gay {
+      animation: colorRotate 6s linear 0s infinite;
+}
+
+.jump {
+  transform-origin: 50% 50%;
+  animation: jump .5s linear alternate infinite;
+}
+
+/* CSS */
+.button-19 {
+  appearance: button;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-19:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.button-19:main,
+.button-19:focus {
+  user-select: auto;
+}
+
+.button-19:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.button-19:disabled {
+  cursor: auto;
+}
+
+</style>
+</head>
+<body id="sus">
+<div class="w3-content w3-center w3-margin-bottom">
+  <h1 class="w3-monospace" id="aaa">HOI MR VERSTEEGT!</h1>
+  <div id="butt">
+      
+  <img class="w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-circle" id="ass" style="margin: auto" src="https://pbs.twimg.com/profile_images/863137822164865024/Mt-BN4H0_400x400.jpg">
+  </div>
+  </div>
+  <div class="w3-content">
+  <p class="w3-monospace" id="bbb">I searched for Dutch candy everywhere, but I failed because I don't even remember how is it called. Unfortunately, you are left out without a present. Perhaps, you can imagine the candy in your head, and enjoy its taste.</p>
+  <div class="w3-center">
+   <button id="on" onclick="ani()" class="button-19 w3-padding-large w3-blue w3-small w3-hover-red">DON'T CLICK ME</button>
+ </div>
+ <div class="w3-center">
+ <!--img src="grassio.jpeg" id="martina" style="display: none"-->
+ <img id="martina" style="display: none" src="sss.jpeg">
+ 
+ </div>
+  </div>
+<script>autoplay();</script> 
+  <script>
+ 
+      function ani() {
+  document.getElementById('butt').classList.add('jump');
+    document.getElementById('ass').classList.add('w3-spin');
+    document.getElementById('on').style.display = "none";
+     document.getElementById('martina').style.display = "inline";
+        document.getElementById('aaa').classList.add('w3-text-red', 'w3-spin');
+         document.getElementById('bbb').classList.add('gay');
+           document.getElementById('sus').classList.add('w3-black');
+ 
+}
+  </script>
+
+</body>
+</html>
